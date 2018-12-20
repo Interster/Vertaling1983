@@ -1,0 +1,87 @@
+\documentclass[twoside,twocolumn,letterpaper]{book}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{lettrine}
+\usepackage{fancyhdr}
+\usepackage{fixltx2e}
+
+\newcommand{\jChapter}[1]{\par\bigskip\lettrine{{\textcolor{red}{#1}}}{}\markboth{\chaplabel\ #1:1}{\chaplabel\ #1:1}\renewcommand{\jnumChapters}{#1}}
+
+\newcommand{\jverseFormat}[1]{#1}
+\newcommand{\jChapterNumFormat}[1]{\textcolor{cyan}{\textbf{#1}}}
+
+\newcommand{\jverse}[3]{\noindent{\jChapterNumFormat{#1}\markboth{\chaplabel\ \jnumChapters :#1}{\chaplabel\ \jnumChapters :#1}} #2{\jverseFormat{#3}}\par\smallskip\renewcommand{\jnumVerses}{#1}}
+
+\newcommand{\jBracketWord}[1]{\emph{#1}}
+
+\newcommand{\jParaSymbol}[0]{{}}
+
+\raggedright
+
+\setlength{\columnseprule}{0.0pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RO]{\leftmark}
+\fancyhead[LE]{\rightmark}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headwidth}{\textwidth}
+\addtolength{\headwidth}{\marginparsep}
+\addtolength{\headwidth}{\marginparwidth}
+
+\newcommand{\chaplabel}{}
+\newcommand{\jnumChapters}{0}
+\newcommand{\jnumVerses}{0}
+
+\begin{document}
+
+\frontmatter
+
+\title{Die Bybel}
+\date{}
+\author{}
+\setlength{\columnseprule}{0pt}
+\maketitle
+
+%\tableofcontents
+\mainmatter
+
+\part*{Ou Testament}
+\setlength{\columnseprule}{0.0pt}
+\renewcommand{\jnumChapters}{0}
+\chapter{Genesis}
+\renewcommand{\chaplabel}{Genesis}
+\jChapter{1}
+God se skeppingswerk
+\jverse{1}{}{In the begin het God die hemel en die aarde geskep.}
+\jverse{2}{}{Die aarde was heeltemal onbewoonbaar, dit was donker op die diep waters, maar die Gees van God het oor die waters gesweef.}
+\jverse{3}{}{Toe het God ges\^e: ``Laat daar lig wees!''  En daar was lig.}
+%\input{./Genesis.tex}
+
+\part*{Nuwe Testament}
+\setlength{\columnseprule}{0.0pt}
+\renewcommand{\jnumChapters}{0}
+\chapter{Matteus}
+\renewcommand{\chaplabel}{Matteus}
+\jChapter{1}
+
+Die geslagsregister van Jesus Christus
+
+\jverse{1}{}{Die geslagsregister van Jesus Christus, die Seun van Dawid, die seun van Abraham:}
+\jverse{2}{}{Abraham was die vader van Isak, Isak van Jakob, en Jakob van Juda en sy broers:}
+\jverse{3}{}{Juda was die vader van Peres en Serag by Tamar, Peres van Gesron, en Gesron van Ram;}
+\jverse{4}{}{Ram was die vader van Amminadab, Amminadab van Nagson, en Nagson van Salmon;}
+\jverse{5}{}{Salmon was die vader van Boas by Ragab, Boas van Obed by Rut, Obed van Isai;}
+\jverse{6}{}{Isai was die vader van koning Dawid.  \newline Dawid was die vader van Salomo by die vrou van Urija;}
+\jverse{7}{}{Salomo was die vader van Rehabeam, Rehabeam van Baia en Abia van Asa;}
+\jverse{8}{}{Asa was die vader van Josafat van Joram, en Joram van Ussia;}
+\jverse{9}{}{Ussia was die vader van Jotam, Jotam van Agas, en Agas van Hiskia;}
+\jverse{10}{}{Hiskia was die vader van Manasse, Manasse van Amon, en Amon van Josia;}
+\jverse{11}{}{Josia was die vader van Jojagin en sy broers.  Toe is die volk weggevoer na Babiloni\"e toe.}
+\jverse{12}{}{En na die Babiloniese ballingskap was dit so:  Jojagin was die vader van Sealti\"el, en Sealti\"el van Serubbabel;}
+\jverse{13}{}{Serubbabel was die vader van Abihud, Abihud van Eljakim, en Eljakim van Asor;}
+\jverse{14}{}{Asor was die vader van Sadok, Sadok van Agim, en Agim van Elihud;}
+\jverse{15}{}{Elihud was die vader van Eleasar, Eleasar van Mattan, en Mattan van Jakob;}
+\jverse{16}{}{Jakob was die vader van Josef, die man van Maria uit wie gebore is Jesus wat Christus genoem word.}
+\jverse{17}{}{Altesaam was daar dus veertien geslagte van Abraham af tot by Dawid, veertien van Dawid af tot by die Babiloniese ballingskap en veertien van die Babiloniese ballingskap af tot by Christus.}
+
+\end{document}
